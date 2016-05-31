@@ -1,0 +1,6 @@
+pydownloader.py
+setup.py
+pydownloader.egg-info/PKG-INFO
+pydownloader.egg-info/SOURCES.txt
+pydownloader.egg-info/dependency_links.txt
+pydownloader.egg-info/top_level.txt
