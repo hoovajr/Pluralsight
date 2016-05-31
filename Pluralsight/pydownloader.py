@@ -40,8 +40,7 @@ class Downloader(QDialog):
     def browse_file(self):
         save_file = QFileDialog.getSaveFileName(self, caption="Save File As", directory=".",
                                                 filter="All Files (*.*)")
-        print(save_file)
-
+        
         self.save_location.setText(save_file[0])
 
     def download(self):
@@ -50,7 +49,7 @@ class Downloader(QDialog):
         save_location = self.save_location.text()
         
         try:
-            urllib.request.urlretrieve(url, save_location, self.report)
+            urllib.request.urlretrieve(url, save_location, self.report)            
         except Exception:
             QMessageBox.warning(self, "Warning", "The download failed")
             return
