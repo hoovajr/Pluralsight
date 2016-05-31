@@ -9,6 +9,7 @@ class QWidgetDemos(QDialog):
         QDialog.__init__(self)
         self.setWindowTitle("QWidgets Demo")
 
+        # test comment
         self.combobox = QComboBox()
       
         self.combobox.addItems(["Item 1", "Item 2", "Item 3"])
